@@ -5,6 +5,13 @@
   top: 0;
   left: 0;
  }
+ .bodystyle{
+	 background-image:url(background.jpg);background-size: cover;background-repeat:none;
+	 
+ }
+ 
+ 
+ 
  .booksheader{
 	 
 	 color:beige;
