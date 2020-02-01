@@ -3,6 +3,8 @@
 # Date:01-30-2020
 # Purpose : To calculate the grades from the  marks achieved by students
 
+# Initializing variables
+
 mark = 0;
 Percentage = 0;
 
@@ -32,6 +34,6 @@ while choice.lower() == "y":
     else:                                                     # If invalid score enters prints invalid score and asks for choice to continue
         print("Invalid score entered")
 
-    choice = input("Would you like to try again?: ").lower()
+    choice = input("Would you like to try again?: ").lower()     #if input is "no" prints bye, if input is yes goes back to thewhile loop and continues
 
 print("bye")
