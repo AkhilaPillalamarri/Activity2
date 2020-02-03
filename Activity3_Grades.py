@@ -11,11 +11,14 @@ Percentage = 0;
 choice = "y"
 while choice.lower() == "y":
 
-    mark = float(input("Enter the points earned from 0-1000: "))   # Enter the marks
-    Percentage = float((mark*100)/1000)                            # Calculating precentage obtained by the marks given
+    # Enter the marks
+    mark = float(input("Enter the points earned from 0-1000: "))
 
+    # Calculating precentage obtained by the marks given
+    Percentage = float((mark*100)/1000)
 
-    if(mark<=1000 and mark>=0):                                    # If the marks entered are less than 1000 and greater than 0 enters into loop
+    # If the marks entered are less than 1000 and greater than 0 enters into loop
+    if(mark<=1000 and mark>=0):
         print("Percentage is " + str(Percentage))
         if (Percentage>=92):
              print("Letter Grade : A")
@@ -31,9 +34,12 @@ while choice.lower() == "y":
              print("Letter grade : D")
         else:
             print("Letter grade : F")
-    else:                                                     # If invalid score enters prints invalid score and asks for choice to continue
+
+    # If invalid score enters prints invalid score and asks for choice to continue
+    else:
         print("Invalid score entered")
 
-    choice = input("Would you like to try again?: ").lower()     #if input is "no" prints bye, if input is yes goes back to thewhile loop and continues
+    # if input is "no" prints bye, if input is yes goes back to thewhile loop and continues
+    choice = input("Would you like to try again?: ").lower()
 
 print("bye")
